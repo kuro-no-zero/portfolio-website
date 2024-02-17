@@ -1,0 +1,280 @@
+﻿body, html {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #e2f0f0;
+    background-color: #111111
+}
+
+#app {
+    padding: 16px;
+}
+
+.content-wrapper {
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+.content {
+    position: relative;
+    opacity: 100;
+    -webkit-animation: show-44a9db24 .5s ease-out forwards;
+    animation: show-44a9db24 .5s ease-out forwards
+}
+
+.content-wrapper .header {
+    position: sticky;
+    top: 0;
+    background-color: #111111;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: -16px -16px 16px -16px;
+    padding: 16px
+}
+
+.content-wrapper .header-link {
+    color: #fbbe5b;
+    text-decoration: none
+}
+
+.content-wrapper .header h1 {
+    font-size: 3rem;
+    color: #fbbe5b;
+    margin: 0 0 16px 0
+}
+
+.content-wrapper .header h1 small{
+    margin-top: 4px;
+    display:block;
+    font-size: 1.124rem;
+    font-weight: 400;
+}
+
+.content-wrapper .header .links {
+    display: flex;
+    height: 42px;
+}
+
+.content-wrapper .header .links .link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.8125rem;
+    color: #e29ba7;
+    margin-right: 16px
+}
+
+.content-wrapper .header .links .link.resume {
+    flex-direction: row;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 0 8px
+}
+
+.content-wrapper .header .links .link:hover {
+    color: #f7e6e9
+}
+
+.content-wrapper .header .links .link.resume .link-icon {
+    margin-left: 8px
+}
+
+@media(min-width: 768px) {
+    .content-wrapper .header {
+        margin-bottom:256px;
+        flex-direction: row;
+        padding: 32px 16px 0 16px;
+        margin: -32px -16px 16px -16px
+    }
+}
+
+@media(min-width: 768px) {
+    .about-information {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 28vh;
+        padding-top: 32px
+    }
+}
+
+.about-information .profile-image {
+    border: 4px solid #e29ba7;
+    max-width: 248px;
+    border-radius: 50%;
+    filter: grayscale(40%);
+    margin: 0 auto 48px auto
+}
+
+@media(min-width: 768px) {
+    .about-information .profile-image {
+        margin-bottom:0;
+        margin-right: 48px;
+    }
+}
+
+.about-information .about-text[data-v-44a9db24] {
+    color: #edc1c9;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+@media(min-width: 768px) {
+    .about-information .about-text {
+        font-weight:300;
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fbbe5b;
+    margin: 16px 0
+}
+
+@media(min-width: 768px) {
+    h2 {
+        font-size:2rem;
+        margin: 16px 0;
+    }
+}
+
+.projects {
+    align-items: flex-start;
+}
+
+.projects {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 32px 0;
+}
+
+.projects button.project-card {
+    justify-content: stretch;
+}
+
+.projects .project-card {
+    background-color: #232323;
+}
+
+@media(min-width: 768px) {
+    .projects button.project-card {
+        margin:8px;
+        font-size: 1.125rem;
+        width: calc(50% - 16px)
+    }
+}
+
+.projects .project-card {
+    border: none;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    background-color: #1e1e1e;
+    padding: 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 8px 0;
+    width: 100%;
+    line-height: 1.44
+}
+
+.projects .project-card .project-video {
+    position: relative;
+    margin-left: -24px;
+    margin-top: -24px;
+    width: calc(100% + 48px);
+    display: inline-flex;
+    background-color: #252525;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden
+}
+
+.projects video{
+    width: 100%;
+    filter: grayscale(.5);
+}
+
+.projects .project-card .project-video:before {
+    content: "";
+    -webkit-animation: placeholderAnimate-44a9db24 1s ease-in-out infinite;
+    animation: placeholderAnimate-44a9db24 1s ease-in-out infinite;
+    background: linear-gradient(90deg,#252525 0,#1e1e1e 50%,#252525);
+    display: block;
+    height: 100%;
+    width: 33%;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.video-additional-info {
+    display: flex;
+    position: relative;
+    padding: 12px 24px;
+    margin-left: -16px;
+    margin-right: -32px;
+    margin-bottom: -52px;
+    left: -8px;
+    background-color: rgba(30,30,30,.8);
+    top: -50px;
+    font-size: .875rem
+}
+
+.video-additional-info .icon {
+    margin-right: 2px
+}
+
+.video-additional-info>div {
+    margin-right: 16px
+}
+
+@media(min-width: 768px) {
+    .projects .project-card h3 {
+        font-size:1.5rem
+    }
+}
+
+.clickable-card-header:not(small) {
+    color: #e29ba7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.projects .project-card h3 small {
+    display: block;
+    font-weight: 400;
+    color: #e2f0f0
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.projects button.project-card {
+    justify-content: stretch;
+}
+
+.clickable-card-header:not(small) .clickable-header-icon {
+    margin-left: auto;
+}
+
+.clickable-card-header:not(small) small {
+    width: 100%;
+}
+
+button,input,outgroup,select,textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
