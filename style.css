@@ -5,8 +5,45 @@
     background-color: #111111
 }
 
+body {
+    height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body.modal-active {
+    overflow: hidden
+}
+
 #app {
     padding: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    margin: -1px 0 0 -1px;
+    padding: 0;
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    outline: 0
+}
+
+@media(min-width: 1200px) {
+    #app {
+        padding:16px
+    }
 }
 
 .content-wrapper {
@@ -61,7 +98,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 2.8125rem;
-    color: #e29ba7;
+    color: #f46049;
     margin-right: 16px
 }
 
@@ -75,7 +112,7 @@
 }
 
 .content-wrapper .header .links .link:hover {
-    color: #f7e6e9
+    color: #f6bbb2
 }
 
 .content-wrapper .header .links .link.resume .link-icon {
@@ -91,6 +128,12 @@
     }
 }
 
+.about-information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px
+}
+
 @media(min-width: 768px) {
     .about-information {
         display:flex;
@@ -102,7 +145,7 @@
 }
 
 .about-information .profile-image {
-    border: 4px solid #e29ba7;
+    border: 4px solid #f46049;
     max-width: 248px;
     border-radius: 50%;
     filter: grayscale(40%);
@@ -116,8 +159,8 @@
     }
 }
 
-.about-information .about-text[data-v-44a9db24] {
-    color: #edc1c9;
+.about-information .about-text {
+    color: #ffffff;
     margin: 0;
     font-size: 1.5rem;
 }
@@ -164,6 +207,14 @@ h2 {
 
 @media(min-width: 768px) {
     .projects button.project-card {
+        margin:8px;
+        font-size: 1.125rem;
+        width: calc(50% - 16px)
+    }
+}
+
+@media(min-width: 768px) {
+    .projects section.project-card {
         margin:8px;
         font-size: 1.125rem;
         width: calc(50% - 16px)
@@ -242,7 +293,7 @@ h2 {
 }
 
 .clickable-card-header:not(small) {
-    color: #e29ba7;
+    color: #f46049;
     display: flex;
     flex-wrap: wrap;
     align-items: center
@@ -257,8 +308,6 @@ h2 {
 * {
     box-sizing: border-box;
 }
-
-
 
 .projects button.project-card {
     justify-content: stretch;
@@ -277,4 +326,123 @@ button,input,outgroup,select,textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0
+}
+
+.projects button.project-card:hover {
+    cursor: pointer
+}
+
+.projects button.project-card:hover video {
+    filter: grayscale(0)
+}
+
+.projects button.project-card:hover .clickable-card-header {
+    color: #f7e6e9
+}
+
+@media(min-width: 768px) {
+    .badge-list {
+        padding:8px 46px 0 46px;
+    }
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 12px 0 12px;
+    margin-bottom: 32px
+}
+
+.badge-list .badge {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000;
+    list-style: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #f46049;
+    color: #f46049;
+    margin: 0 4px;
+    white-space: nowrap;
+    margin-bottom: 16px
+}
+
+.information-section {
+    position: relative;
+    background: #79a8a8;
+    margin-bottom: 8px;
+    color: #121212;
+    padding: 0 32px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding-top: 30px
+}
+
+@media(min-width: 768px) {
+    .information-section {
+        background:unset
+    }
+
+    .information-section:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: calc(-55vw + 50%);
+        width: 100vw;
+        height: 100%;
+        background: #79a8a8;
+        z-index: -1
+    }
+}
+
+.information-section .information-section-background {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    width: 100vw;
+    background: #79a8a8;
+    height: inherit
+}
+
+@media(min-width: 768px) {
+    .information-section .information-section-background {
+        margin-top:-101px;
+        margin-left: -32px;
+        padding-top: 85px
+    }
+}
+
+@media(min-width: 1216px) {
+    .information-section .information-section-background {
+        margin-left:calc(-50vw + 575px);
+        padding-left: calc(50vw - 575px);
+        padding-right: calc(50vw - 575px)
+    }
+}
+
+@media(min-width: 1200px) {
+    .information-section {
+        padding-top:30px;
+        padding-bottom: 0px;
+    }
+}
+
+.information-section .information-header {
+    color: #000000;
+}
+
+.information-section .information-text {
+    font-size: 1.1rem;
+    line-height: 1.44;
+    padding: 0
+}
+
+@media(min-width: 768px) {
+    .information-section .information-text {
+        padding:0 32px;
+        font-size: 1.5rem
+    }
 }
