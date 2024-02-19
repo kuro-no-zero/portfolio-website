@@ -25,6 +25,10 @@ body.modal-active {
     box-sizing: border-box;
 }
 
+#main-subtitle {
+    font-size: 1.5rem;
+}
+
 .sr-only {
     position: absolute;
     margin: -1px 0 0 -1px;
@@ -373,8 +377,8 @@ button,input,outgroup,select,textarea {
     margin-bottom: 8px;
     color: #121212;
     padding: 0 32px;
-    margin-left: -32px;
-    margin-right: -32px;
+    margin-left: -40px;
+    margin-right: -24px;
     padding-top: 30px
 }
 
@@ -402,7 +406,7 @@ button,input,outgroup,select,textarea {
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 32px;
-    width: 100vw;
+    width: 90vw;
     background: #c1f9f9;
     height: inherit
 }
@@ -411,7 +415,8 @@ button,input,outgroup,select,textarea {
     .information-section .information-section-background {
         margin-top:-101px;
         margin-left: -32px;
-        padding-top: 85px
+        padding-top: 85px;
+        width: 99.9vw
     }
 }
 
@@ -445,4 +450,13 @@ button,input,outgroup,select,textarea {
         padding:0 32px;
         font-size: 1.5rem
     }
+}
+
+#mail-link {
+    text-decoration: none;
+    color: #f46049;
+}
+
+#mail-link:hover {
+    color: #f53214;
 }
