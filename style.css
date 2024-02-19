@@ -164,6 +164,15 @@ body.modal-active {
     margin: 0 auto 48px auto
 }
 
+.profile-image:hover {
+    transform: rotate(15deg);
+    transition-duration: 0.3s;
+}
+
+.profile-image:not(hover) {
+    transition-duration: 0.3s;
+}
+
 @media(min-width: 768px) {
     .about-information .profile-image {
         margin-bottom:0;
@@ -386,7 +395,14 @@ button,input,outgroup,select,textarea {
     color: #f46049;
     margin: 0 4px;
     white-space: nowrap;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    cursor: default;
+}
+
+.badge:hover {
+    color: #121212;
+    background-color: #f46049;
+    transition-duration: 0.1s;
 }
 
 .information-section {
