@@ -165,8 +165,9 @@ body.modal-active {
 }
 
 .profile-image:hover {
-    transform: rotate(15deg);
+    transform: translate(0px,-10px);
     transition-duration: 0.3s;
+    border: 4px solid #f52c0d;
 }
 
 .profile-image:not(hover) {
@@ -493,4 +494,63 @@ button,input,outgroup,select,textarea {
 
 #mail-link:hover {
     color: #f53214;
+}
+
+/*Project Page*/
+
+.project-header {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .project-header .project-goback {
+        font-size: 1.2rem;
+    }
+}
+
+.project-header .project-goback {
+    display: inline-flex;
+    align-items: center;
+    color: #f46049;
+    text-decoration: none;
+    max-height: 44px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.project-header .project-goback small {
+    margin-left: 8px;
+    line-height: 1.84375;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    .project-header .project-goback small {
+        font-size: 1.45rem;
+    }
+}
+
+.project-header .project-goback:hover {
+    color: #f7e6e9
+}
+
+@media (min-width: 786px) {
+    .project-top {
+        margin: 8px;
+    }
+}
+
+.content-placeholder {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    background-color: #252525;
+    overflow: hidden
+}
+
+.project-top video {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
 }
