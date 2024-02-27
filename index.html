@@ -886,7 +886,9 @@
         <div class="content-wrapper">
             <div class="header">
                 <h1>
-                    <a href="#/" class="router-link-active router-link-exact-active header-link">Radu Sergiu Gugles</a>
+                    <a href="javascript:void(0)"
+                        class="router-link-active router-link-exact-active header-link section-trigger"
+                        data-section="home">Radu Sergiu Gugles</a>
                     <small id="main-subtitle">Game Programmer</small>
                 </h1>
                 <div class="links">
@@ -1469,6 +1471,8 @@
                     top: 0,
                 });
                 history.pushState({ page: name }, name, "?page=" + name);
+                if (name !== 'home') document.body.classList.remove('isHome')
+                else document.body.classList.add('isHome')
             })
         })
 
