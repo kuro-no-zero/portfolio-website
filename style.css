@@ -503,45 +503,13 @@ button,input,outgroup,select,textarea {
     margin-bottom: 16px;
 }
 
-@media (min-width: 768px) {
-    .project-header .project-goback {
-        font-size: 1.2rem;
-    }
-}
-
-.project-header .project-goback {
-    display: inline-flex;
-    align-items: center;
-    color: #f46049;
-    text-decoration: none;
-    max-height: 44px;
-    font-size: 1.2rem;
-    white-space: nowrap;
-}
-
-.project-header .project-goback small {
-    margin-left: 8px;
-    line-height: 1.84375;
-    font-size: 1.3rem;
-}
-
-@media (min-width: 768px) {
-    .project-header .project-goback small {
-        font-size: 1.45rem;
-    }
-}
-
-.project-header .project-goback:hover {
-    color: #f7e6e9
-}
-
 @media (min-width: 786px) {
     .project-top {
         margin: 8px;
     }
 }
 
-.content-placeholder {
+/* .content-placeholder {
     position: relative;
     width: 100%;
     display: inline-flex;
@@ -553,4 +521,77 @@ button,input,outgroup,select,textarea {
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px
+} */
+
+.content-placeholder {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    background-color: #252525;
+    overflow: hidden;
+}
+
+.content-placeholder:before {
+    content: "";
+    -webkit-animation: placeholderAnimate-5e3d8dec 1s ease-in-out infinite;
+    animation: placeholderAnimate-5e3d8dec 1s ease-in-out infinite;
+    background: linear-gradient(90deg,#252525 0,#1e1e1e 50%,#252525);
+    display: block;
+    height: 100%;
+    width: 33%;
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.portfolio-top video {
+    width: 100%;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.project-top video {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.content-placeholder img,.content-placeholder video {
+    z-index: 0;
+    width: 100%
+}
+
+@media(min-width: 768px) {
+    .project-top video {
+        width:calc(33.33333% - 8px)
+    }
+}
+
+.portfolio-top h2 {
+    position: relative;
+    top: -56px;
+    font-size: 1.125rem;
+    margin-bottom: -49px;
+    padding: 16px 16px;
+    background-color: rgba(30,30,30,.8);
+    height: 53px
+}
+
+@media(min-width: 768px) {
+    .portfolio-top h2 {
+        margin-bottom:-74px;
+        top: -88px;
+        font-size: 2rem;
+        height: 69px;
+    }
+}
+
+.projects .project-card ul {
+    padding: 0;
+    list-style: none;
+}
+
+.projects .project-card ul .list-icon {
+    font-size: 1.125rem;
+    margin-right: 8px;
 }
