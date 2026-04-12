@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(python3 /c/Users/gugle/Documents/GitHub/portfolio-website/.write_html.py)",
+      "Read(//usr/**)",
+      "Read(//c/Windows/**)",
+      "Bash(python /c/Users/gugle/Documents/GitHub/portfolio-website/.write_html.py)",
+      "Bash(git:*)"
     ]
   }
 }
