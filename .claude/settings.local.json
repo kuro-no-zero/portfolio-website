@@ -6,7 +6,10 @@
       "Read(//usr/**)",
       "Read(//c/Windows/**)",
       "Bash(python /c/Users/gugle/Documents/GitHub/portfolio-website/.write_html.py)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(python /c/Users/gugle/Documents/GitHub/portfolio-website/.fix.py)",
+      "Bash(python -c ':*)",
+      "Bash(python:*)"
     ]
   }
 }
