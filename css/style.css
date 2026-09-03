@@ -156,6 +156,23 @@ h2 {
     color: #a02626;
 }
 
+.social-link--resume {
+    font-size: 0.9rem;
+    font-weight: 600;
+    gap: 7px;
+    padding: 0 14px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1.5px solid #6b1919;
+    color: #6b1919;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-link--resume:hover {
+    background-color: #6b1919;
+    color: #e2f0f0;
+}
+
 
 /* =============================================
    PAGE SECTION ROUTING
@@ -196,7 +213,7 @@ h2 {
 }
 
 .profile-image:hover {
-    transform: scale(1.09);
+    /*transform: scale(1.09);*/
 }
 
 @media (min-width: 768px) {
